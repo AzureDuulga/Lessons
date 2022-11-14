@@ -3,13 +3,18 @@ form{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     align-items: flex-end;
-    max-width: 450px;
+    max-width: 400px;
     margin: auto;
     line-height: 3rem;
     padding: 20px;
 }
-#name, #email{
-    width: 333px;
+#name, #email, #message{
+    width: 305px;
+}
+/* #message{
+    vertical-align:top;
+} */
+#submit{
+    align-items:flex-start;
 }
