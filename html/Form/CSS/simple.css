@@ -11,9 +11,6 @@ form{
 #name, #email, #message{
     width: 100%;
 }
-/* #message{
-    vertical-align:top;
-} */
 #submit{
     display: flex;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/hi.css">
+    <title>Hi form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Hi form</legend>
+            <div class="row">
+                    <div class="col-1">
+                        <label for="Fname">Нэр</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="Fname" name="Fname">
+                    </div>
+            </div>       
+            <div class="row">
+                    <div class="col-1">
+                        <label for="Lname">Овог</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="Lname" name="Lname">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1">
+                        <label for="email">И-Мейл</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="email" id="email" name="email">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1">
+                        <label for="phone_number">Утас</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" id="phone_number" name="phone_number" min="1">
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-1">
+                        <label for="age">Нас</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" id="age" name="age" min="1">
+                    </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-1">
+                        <label for="gender">Хүйс</label>
+                    </div>
+                    <div class="col-2">
+                        <select name="gender" id="gender">
+                            <option value="" disabled selected hidden>Сонгох...</option>
+                            <option value="male">Эр</option>
+                            <option value="female">Эм</option>
+                        </select>
+                    </div>
+             </div>
+            <div class="row">
+                    <div class="col-1">
+                        <label for="desc">Тодорхойлолт</label>
+                    </div>
+                    <div class="col-2">
+                        <textarea rows="10" cols="30" name="desc"></textarea>
+                        </div>
+             </div>
+             <div class="row">
+                <div class="col-1">
+                    <label for="student">Сурагч эсэх</label>
+                </div>
+                <div class="col-2">
+                    <input type="checkbox" name="student">
+                    <label for="student">Тийм</label>
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>

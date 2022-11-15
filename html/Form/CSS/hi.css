@@ -1,0 +1,18 @@
+fieldset{
+    max-width: 60%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    margin-bottom: 10px;
+}
+.col-1{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:10px;
+    align-self: flex-end;
+}
+.col-2{
+    width: 80%;
+}
