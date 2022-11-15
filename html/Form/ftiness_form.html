@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/fitness.css">
+    <title>Fitness form</title>
+</head>
+<body>
+    <h2>Welcome to the 24x7 Fitness Club :Courts Reservation Page!!		
+    </h2>
+    <form>
+        <div id="inner_outline">
+            <p>Member demographics</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <p>Are you a Member?</p>
+            <input type="radio" name="member" value="member">
+            <label for="member">Member</label>
+            <input type="radio" name="non_member" value="non_member">
+            <label for="non_member">Non-member</label><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="facility">Facility</label>
+            <select name="facility" id="facility">
+                <option value="badminton">Badminton</option>
+                <option value="fooseball">Fooseball</option>
+            </select>
+        </div>
+        <div>
+            <label for="date">Select a reservation date adn time:</label><br>
+            <input type="datetime-local" id="date" name="date">
+        </div>
+        <div>
+            <input type="checkbox" name="t&c" value="agree">
+            <label for="t&c">I agree to the clib's reservation policy</label>
+        </div>
+            <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>

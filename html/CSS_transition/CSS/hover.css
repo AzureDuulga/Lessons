@@ -1,0 +1,21 @@
+div {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 2s;
+  }
+
+    div:active{
+    width: 100%;
+  }
+  div:nth-child(4){
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width, background-color, 2s;
+  }
+
+    div:nth-child(4):hover{
+    width: 100%;
+    background-color: black;
+  } 

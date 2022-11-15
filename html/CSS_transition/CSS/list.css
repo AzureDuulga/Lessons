@@ -1,0 +1,17 @@
+div{
+    background-color: rgb(127, 236, 255);
+    width: 40%;
+    margin: auto;
+}
+h4{
+    border-top: solid 1px green;
+    border-bottom: solid 1px green;
+    padding: 10px;
+    margin: 0;
+    transition: all 2s;
+    color: rgb(91, 89, 89);
+}
+h4:hover{
+    background-color: orangered;
+    font-size:50px;
+}

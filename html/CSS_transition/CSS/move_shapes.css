@@ -1,0 +1,50 @@
+div {
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition-property: top, left, border-radius;
+    transition-duration: 1s, 2s, 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box{
+    position: relative;
+    border: solid 1px grey;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 5px 10px 8px #888888;
+  }
+  #Normal{
+    background: blue;
+    z-index: 1;
+  }
+#ex1{
+    background: green;
+    transition-property: top, left;
+    transition-delay: 0s, 1s;
+}
+#ex2{
+    background: red;
+    transition-delay: 0s, 0s, 0s;
+}
+#box:hover #Normal {
+    top:0px;
+    left:0px
+}
+#box:hover #ex1 {
+    top: 80%;    
+    left:80%
+}
+#box:hover #ex2 {
+    background: orange;
+    border-radius: 0px;
+    left: 80%;
+    top: 0;
+}
