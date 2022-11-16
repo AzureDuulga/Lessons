@@ -12,17 +12,17 @@
         <div class="row row_1">
             <h2>General Information</h2>
             <div>
-                <input type="text" id="name" name="name" placeholder="FirstName">
+                <input type="text" name="fname" placeholder="First Name">
             
-                <input type="text" id="name" name="name" placeholder="LastName">
+                <input type="text" name="name" placeholder="Last Name">
             </div>
-            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email">
             
-            <input type="date" id="date" name="date" >
+            <input type="date" name="date" >
 
-            <input type="text" id="company" name="company" placeholder="Company">
+            <input type="text" name="company" placeholder="Company">
 
-            <select name="position" id="position" placeholder="Position">
+            <select name="position"placeholder="Position">
                 <option disabled selected hidden>Position</option>
                 <option value="doctor">Doctor</option>
                 <option value="teacher">Teacher</option>
@@ -33,13 +33,13 @@
         <div class="row row_2">
             <h2>Contact Details</h2>
 
-            <input type="text" id="name" name="name" placeholder="FirstName">
+            <input type="text" name="street" placeholder="Street">
             
-            <input type="text" id="name" name="name" placeholder="LastName">
+            <input type="text" name="addinfo" placeholder="Additional Information">
             <div>
-                <input type="number" id="zip_code" name="zip_code" min="1" placeholder="Zip Code">
+                <input type="number" name="zip_code" min="1" placeholder="Zip Code">
                 
-                <select name="place" id="place">
+                <select name="place">
                     <option disabled selected hidden>Place</option>
                     <option value="baynzurh">Baynzurkh</option>
                     <option value="han_uul">Khan uul</option>
@@ -47,7 +47,7 @@
                     <option value="sukhbaatar">Sukhbaatar</option>
                 </select>
             </div>
-            <select name="country" id="country">
+            <select name="country">
                 <option disabled selected hidden>Country</option>
                 <option value="Mongolia"></option>
                 <option value="Korea"></option>
@@ -55,13 +55,14 @@
                 <option value="Australia"></option>
             </select>
             <div>
-                <input type="number" id="code" name="code" min="1" placeholder="Code">
+                <input type="number" name="code" min="1" placeholder="Code">
 
-                <input type="number" id="phone_number" name="phone_number" min="1" placeholder="Phone number">
+                <input type="number" name="phone_number" min="1" placeholder="Phone number">
             </div>
-            <input type="checkbox" name="t&c" value="t&c">
-            <label for="t&c">i do accept the<a href="https://www.google.com/">Terms and Condition</a>of your site</label>
-       
+            <div>
+                <input type="checkbox" name="t&c" value="t&c">
+                <label for="t&c">i do accept the<a href="https://www.google.com/">Terms and Condition</a>of your site</label>
+            </div>
             <input id="register" type="submit" value="Register Badge">
 
         </div>

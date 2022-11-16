@@ -1,38 +1,58 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(137, 176, 223);
+}
 form{
     display: flex;
-    background-color: rgba(137, 176, 223);
+    justify-content: center;
 }
 .row{
     display: flex;
     flex-direction: column;
-    max-width: 40%;
-    margin: auto;
-    margin: 10px;
-    padding: 10px;
-    line-height: 3rem;
+    padding: 50px;
 }
-
+/* .row div{
+    display: flex;
+    justify-content: space-between;
+} */
 .row_1{
     background-color: white;
     border-radius: 20px 0 0 20px ;
 }
-input, select{
-    border: none;
-    border-bottom: solid black 1px;
-}
-
-
-.row input{
+.row_1 input, .row_1 select{
     color:rgb(128, 127, 131);
 }
+input, select{
+    border: none;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.row_2 input, .row_2 select, a{
+    border-bottom: 1px solid white;
+    color: white;
+}  
 h2{
-    color:rgb(58, 58, 193)
+    color:rgb(38, 84, 157);
+    margin: 0;
 }
 
 .row_2 h2{
     color:white
 }
 .row_2{
-    background-color:rgb(38, 84, 157);
+    background-color:rgb(58, 58, 193);
     border-radius: 0 20px 20px 0 ;
+}
+#register{
+    color: black;
+    background-color: white;
+    border: solid 2px black;
+    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(80, 80, 80)) 4;
+    width: 180px;
+    border-radius: 20px;
 }
