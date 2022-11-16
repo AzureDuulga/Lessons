@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/general_info.css">
+    <title>General&Contact registration form</title>
+</head>
+<body>
+    <form>
+        <div class="row row_1">
+            <h2>General Information</h2>
+            <div>
+                <input type="text" id="name" name="name" placeholder="FirstName">
+            
+                <input type="text" id="name" name="name" placeholder="LastName">
+            </div>
+            <input type="email" id="email" name="email" placeholder="Email">
+            
+            <input type="date" id="date" name="date" >
+
+            <input type="text" id="company" name="company" placeholder="Company">
+
+            <select name="position" id="position" placeholder="Position">
+                <option disabled selected hidden>Position</option>
+                <option value="doctor">Doctor</option>
+                <option value="teacher">Teacher</option>
+                <option value="engineer">Engineer</option>
+                <option value="system admin">System admin</option>
+            </select>
+        </div>
+        <div class="row row_2">
+            <h2>Contact Details</h2>
+
+            <input type="text" id="name" name="name" placeholder="FirstName">
+            
+            <input type="text" id="name" name="name" placeholder="LastName">
+            <div>
+                <input type="number" id="zip_code" name="zip_code" min="1" placeholder="Zip Code">
+                
+                <select name="place" id="place">
+                    <option disabled selected hidden>Place</option>
+                    <option value="baynzurh">Baynzurkh</option>
+                    <option value="han_uul">Khan uul</option>
+                    <option value="bayngol">Bayngol</option>
+                    <option value="sukhbaatar">Sukhbaatar</option>
+                </select>
+            </div>
+            <select name="country" id="country">
+                <option disabled selected hidden>Country</option>
+                <option value="Mongolia"></option>
+                <option value="Korea"></option>
+                <option value="Japan"></option>
+                <option value="Australia"></option>
+            </select>
+            <div>
+                <input type="number" id="code" name="code" min="1" placeholder="Code">
+
+                <input type="number" id="phone_number" name="phone_number" min="1" placeholder="Phone number">
+            </div>
+            <input type="checkbox" name="t&c" value="t&c">
+            <label for="t&c">i do accept the<a href="https://www.google.com/">Terms and Condition</a>of your site</label>
+       
+            <input id="register" type="submit" value="Register Badge">
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+form{
+    display: flex;
+    background-color: rgba(137, 176, 223);
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+    line-height: 3rem;
+}
+
+.row_1{
+    background-color: white;
+    border-radius: 20px 0 0 20px ;
+}
+input, select{
+    border: none;
+    border-bottom: solid black 1px;
+}
+
+
+.row input{
+    color:rgb(128, 127, 131);
+}
+h2{
+    color:rgb(58, 58, 193)
+}
+
+.row_2 h2{
+    color:white
+}
+.row_2{
+    background-color:rgb(38, 84, 157);
+    border-radius: 0 20px 20px 0 ;
+}
