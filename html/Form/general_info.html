@@ -36,16 +36,19 @@
             <input type="text" name="street" placeholder="Street">
             
             <input type="text" name="addinfo" placeholder="Additional Information">
-            <div>
-                <input type="number" name="zip_code" min="1" placeholder="Zip Code">
+            <div class="address">
+                <div class="address-two">
+                    <input type="number" name="zip_code" min="1" placeholder="Zip Code">
+                </div>
                 
-                <select name="place">
+                <div class="address-two">
+                    <select name="place" class="place">
                     <option disabled selected hidden>Place</option>
                     <option value="baynzurh">Baynzurkh</option>
                     <option value="han_uul">Khan uul</option>
                     <option value="bayngol">Bayngol</option>
                     <option value="sukhbaatar">Sukhbaatar</option>
-                </select>
+                </select></div>
             </div>
             <select name="country">
                 <option disabled selected hidden>Country</option>
@@ -61,7 +64,7 @@
             </div>
             <div>
                 <input type="checkbox" name="t&c" value="t&c">
-                <label for="t&c">i do accept the<a href="https://www.google.com/">Terms and Condition</a>of your site</label>
+                <label for="t&c">i do accept the <a href="https://www.google.com/">Terms and Condition</a> of your site</label>
             </div>
             <input id="register" type="submit" value="Register Badge">
 

@@ -13,16 +13,13 @@ form{
     flex-direction: column;
     padding: 50px;
 }
-/* .row div{
-    display: flex;
-    justify-content: space-between;
-} */
+
 .row_1{
     background-color: white;
     border-radius: 20px 0 0 20px ;
 }
-.row_1 input, .row_1 select{
-    color:rgb(128, 127, 131);
+.row_1 input::placeholder,.row_1 input, .row_1 select{
+    color:rgb(128, 127,  131);
 }
 input, select{
     border: none;
@@ -32,10 +29,13 @@ input, select{
     font-size: 18px;
     margin-top: 30px;
 }
-.row_2 input, .row_2 select, a{
-    border-bottom: 1px solid white;
+.row_2 input::placeholder, .row_2 select, a, .row_2 label{
     color: white;
 }  
+.row_2 input, .row_2 select{
+    
+    border-bottom: 1px solid white;
+}
 h2{
     color:rgb(38, 84, 157);
     margin: 0;
@@ -49,10 +49,23 @@ h2{
     border-radius: 0 20px 20px 0 ;
 }
 #register{
-    color: black;
     background-color: white;
-    border: solid 2px black;
-    border-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(80, 80, 80)) 4;
-    width: 180px;
+    border: inset 2px grey;
+    /* border-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(80, 80, 80)) 4; */
     border-radius: 20px;
+    width: 150px ;
+    padding: 5px;
+}
+
+.address {
+    display: flex;
+}
+
+.address-two{
+    flex: 1;
+
+}
+
+.place{
+    width: 100%;
 }
