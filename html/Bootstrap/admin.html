@@ -8,7 +8,7 @@
     <title>Admin panel</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">Админ</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,13 +17,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Хэрэглэгч</a>
+                <a class="nav-link active text-light" aria-current="page" href="#">Хэрэглэгч</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-Light" href="#">Ангилал</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Мэдээ
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -37,7 +37,6 @@
                 <a class="nav-link disabled text-Light" href="#" tabindex="-1" aria-disabled="true">Сэдэв</a>
               </li>
             </ul>
-
               <button class="btn bg-white" type="submit">Гарах</button>
             </div>
         </div>
@@ -51,22 +50,23 @@
             <div class="col p-0 text-end">
 
                 <!-- Button trigger modal -->
-              <button class="btn border-primary text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="submit">Шинэ</button>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Шинэ</button>
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="add_label" aria-hidden="true">
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ангилал нэмэх</h5>
+                        <h5 class="modal-title" id="add_label">Ангилал нэмэх</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                        ...
+                        <div class="modal-body text-align-start">
+                          <label for="name" class="form-label">Нэр</label>
+                          <input type="text" class="form-control" id="name" placeholder="Ангиллын нэр">
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Устгах</button>
+                        <button type="button" class="btn btn-primary">Хадгалах</button>
                         </div>
                     </div>
                     </div>
@@ -77,8 +77,8 @@
           <div class="col fw-bold">
             Улс төр
           </div>
-          <div class="col fw-bold text-end">
-            Засах
+          <div class="col fw-bold table-hover-secondary text-end">
+            <button type="button" class="btn btn-light m-0">Засах</button>
           </div>
         </div>
         <div class="row border rounded m-4 p-3">
@@ -86,7 +86,7 @@
             Нийгэм
           </div>
           <div class="col fw-bold text-end">
-            Засах
+            <button type="button" class="btn btn-light">Засах</button>
           </div>
         </div>
         <div class="row border rounded m-4 p-3">
@@ -94,7 +94,7 @@
             Спорт
           </div>
           <div class="col fw-bold text-end">
-            Засах
+            <button type="button" class="btn btn-light">Засах</button>
           </div>
         </div>
       </div>
