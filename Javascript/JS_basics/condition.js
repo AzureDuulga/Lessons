@@ -78,3 +78,86 @@ else if (ATeamDundaj<BTeamDundaj){
 else{
     console.log("багууд тэнцсэн")
 }
+
+// Өгөгдсөн тоонуудын хамгийн их болон хамгийн багыг олно уу
+console.log('Өгөгдсөн тоонуудын хамгийн их болон хамгийн багыг олно уу');
+a=85, b=95, c=50
+
+// хамгийн их утгатай хувьсагч
+
+if ( a > b && a > c){
+    console.log( "Хамгийн их утга=" , a);
+}
+else if ( b > a && b > c){
+    console.log( "Хамгийн их утга=" , b);
+}
+else {
+    console.log( "Хамгийн их утга=" , c);
+}
+
+// хамгийн бага утгатай хувьсагч
+
+if ( a < b && a < c){
+    console.log( "Хамгийн бага утга=" , a);
+}
+else if ( b < a && b < c){
+    console.log( "Хамгийн бага утга=" , b);
+}
+else {
+    console.log( "Хамгийн бага утга=" , c);
+}
+
+//Сурагчдын шалгалтын дүнг гаргаарай
+
+console.log('Сурагчдын шалгалтын дүнг гаргаарай');
+
+let bat = 67;
+let ontsDumd = 59;
+
+if ( bat <= 100 && bat > 90){
+    console.log( "Бат-" , bat , '-Маш сайн');
+}
+else if ( bat <= 90 && bat > 80){
+    console.log( "Бат-" , bat , '- Сайн');
+}
+else if ( bat <= 80 && bat > 70){
+    console.log( "Бат-" , bat , '- Дунд');
+}
+else if ( bat <= 70 && bat > 60){
+    console.log( "Бат-" , bat , '- Хангалттай');
+}
+else {
+    console.log( "Бат-" , bat , '- Маш муу');
+}
+
+if ( ontsDumd <= 100 && ontsDumd > 90){
+    console.log( "Онц Дүмд-" , ontsDumd , '-Маш сайн');
+}
+else if ( ontsDumd <= 90 && ontsDumd > 80){
+    console.log( "Онц Дүмд-" , ontsDumd , '- Сайн');
+}
+else if ( ontsDumd <= 80 && ontsDumd > 70){
+    console.log( "Онц Дүмд-" , ontsDumd , '- Дунд');
+}
+else if ( ontsDumd <= 70 && ontsDumd > 60){
+    console.log( "Онц Дүмд-" , ontsDumd , '- Хангалттай');
+}
+else {
+    console.log( "Онц Дүмд-" , ontsDumd , '- Маш муу');
+}
+
+//Өндөр жилийг олно уу
+
+let today = new Date().toLocaleDateString()
+
+console.log('Today: ',today)
+
+//Tip
+console.log('Tip')
+
+let tohioldol1 = 3000;
+let tohioldol2 = 27500;
+let tohioldol3 = 100000;
+
+// let tohioldol1TolohDun= 
+//   (tohioldol1 > 5000 && tohioldol1 < 30000)  ?  tohioldol1 * 1.15 + "₮" : "Tohiold1 toloh dun:", tohioldol1 * 1.2 + "₮" ;
