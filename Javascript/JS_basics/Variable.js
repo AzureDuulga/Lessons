@@ -12,13 +12,13 @@ e readable
 
 // Exercise 4
 let number = 28;
-let completed = true;
+let IsCompleted = true;
 let running = false;
 let home ;
 
 // Exercise 5
 console.log(typeof number);
-console.log(typeof completed);
+console.log(typeof IsCompleted);
 console.log(typeof running);
 console.log(typeof home);
 
@@ -61,6 +61,33 @@ console.log("Тойргийн талбай", r**2)
 console.log("m=",y**2-y**1/x**2-x**1)
 
 // Exercise 14
-
 const giga = 15;
 console.log("Byte=", giga*10737418240)
+
+// Exercise 15
+let slide1 = 15, slide2 = 14, slide3 = 18;
+console.log("гурвалжны талбай=", slide1*slide2*slide3)
+
+// Exercise 16
+let Celsius = -32;
+console.log("Fahrenheit=", Celsius*1.8)
+
+// Exercise 17
+let Fahrenheit = 48;
+console.log("Celsius=", Fahrenheit/1.8)
+
+// Exercise 18
+let number1 = 8, number2 = 4;
+
+console.log("Өгөгдсөн 2 тооны нийлбэр нь", number1+number2)
+console.log("Өгөгдсөн 2 тооны ялгавар нь", number1-number2)
+console.log("Өгөгдсөн 2 тооны үржвэр нь", number1*number2)
+console.log("Өгөгдсөн 2 тооны ноогдвор нь", number1/number2)
+
+// Exercise 19
+let cm = 8;
+
+console.log("cm=",cm)
+console.log("inch", cm*0.393701)
+
+
