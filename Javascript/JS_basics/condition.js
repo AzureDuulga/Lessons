@@ -161,3 +161,21 @@ let tohioldol3 = 100000;
 
 // let tohioldol1TolohDun= 
 //   (tohioldol1 > 5000 && tohioldol1 < 30000)  ?  tohioldol1 * 1.15 + "₮" : "Tohiold1 toloh dun:", tohioldol1 * 1.2 + "₮" ;
+
+//4 тооны бага
+
+let inp1 = 120, inp2 = 33, inp3 = 10, inp4 = 12;
+
+if ( inp1 < inp2 && inp1 < inp3 && inp1 < inp4){
+    console.log( "Хамгийн бага утга:" , inp1 );
+}
+else if ( inp2 < inp1 && inp2 < inp3 && inp2 < inp4){
+    console.log( "Хамгийн бага утга:" , inp2 );
+}
+else if ( inp3 < inp1 && inp3 < inp2 && inp3 < inp4){
+    console.log( "Хамгийн бага утга:" , inp3 );
+}
+else {
+    console.log( "Хамгийн бага утга:" , inp4 );
+}
+
