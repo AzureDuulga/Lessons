@@ -147,10 +147,15 @@ else {
 }
 
 //Өндөр жилийг олно уу
+console.log("Өндөр жилийг олно уу");
+let year = 4000
 
-let today = new Date().toLocaleDateString()
-
-console.log('Today: ',today)
+if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)){
+    console.log( "Өндөр жил мөн:" + year)
+}
+else {
+    console.log("Өндөр жил биш:" + year)
+}
 
 //Tip
 console.log('Tip')
@@ -159,8 +164,17 @@ let tohioldol1 = 3000;
 let tohioldol2 = 27500;
 let tohioldol3 = 100000;
 
-// let tohioldol1TolohDun= 
-//   (tohioldol1 > 5000 && tohioldol1 < 30000)  ?  tohioldol1 * 1.15 + "₮" : "Tohiold1 toloh dun:", tohioldol1 * 1.2 + "₮" ;
+let tohioldol1TolohDun= 
+  (tohioldol1 > 5000 && tohioldol1 < 30000)  ?  tohioldol1 * 1.15  :  + tohioldol1 * 1.2;
+  console.log(`Tohiold1 toloh dun: ${tohioldol1TolohDun} ₮`);
+
+let tohioldol2TolohDun= 
+  (tohioldol2 > 5000 && tohioldol2 < 30000)  ?  tohioldol2 * 1.15  :  + tohioldol2 * 1.2;
+  console.log(`Tohiold2 toloh dun: ${tohioldol2TolohDun} ₮`);
+
+let tohioldol3TolohDun= 
+  (tohioldol3 > 5000 && tohioldol1 < 30000)  ?  tohioldol1 * 1.15  :  + tohioldol1 * 1.2;
+  console.log(`Tohiold3 toloh dun: ${tohioldol3TolohDun} ₮`);
 
 //4 тооны бага
 
@@ -179,3 +193,54 @@ else {
     console.log( "Хамгийн бага утга:" , inp4 );
 }
 
+//Assignment -1
+
+console.log('Assignment -1');
+
+//1
+let i = 4 > 3; //true
+let ii = 4 >= 3; //true 
+let iii = 4 < 3; //false
+let iv = 4 <= 3;//false
+let v = 4 == 4;//true
+let vi = 4 === 4; //true
+let vii = 4 != 4; //false
+let iix = 4 !== 4; //false
+let ix = 4 != "4";  //false
+let x = 4 == "4";  //true
+let xi = 4 === "4"; //false
+
+
+console.log(i);
+console.log(ii);
+console.log(iii);
+console.log(iv);
+console.log(v);
+console.log(vi);
+console.log(vii);
+console.log(iix);
+console.log(ix);
+console.log(x);
+console.log(xi);
+
+//2
+
+let one = 4 > 3 && 10 < 12; //true
+let two = 4 > 3 && 10 > 12; //false
+let three = 4 > 3 || 10 < 12; //true
+let four = 4 > 3 || 10 > 12; //true
+let five = !(4 > 3); // false
+let six = !(4 < 3); // true
+let eight = !(4 > 3 && 10 < 12); // false
+let nine = !(4 > 3 && 10 > 12); //true
+let ten = !(4 === "4"); // true
+console.log('object');
+console.log(one);
+console.log(two);
+console.log(three);
+console.log(four);
+console.log(five);
+console.log(six);
+console.log(eight);
+console.log(nine);
+console.log(ten);
