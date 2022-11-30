@@ -244,3 +244,15 @@ console.log(six);
 console.log(eight);
 console.log(nine);
 console.log(ten);
+
+//3
+let myAge=24
+
+let yourAge = prompt("Насаа оруулна уу: ");
+
+if ( myAge < yourAge){
+    console.log( "Та хөгшин");
+}
+else {
+    console.log( "Би хөгшин");
+}
