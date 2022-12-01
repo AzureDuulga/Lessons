@@ -1,6 +1,3 @@
-//Nearest number
-console.log('Nearest number :');
-let n = Math.random()
-console.log(Math.round(n));\\
-
-//Nearest number
+console.log(`Hello I am "Name Here".
+I am 'Age here' years old.
+    This is the new line with tab and some \backslashes\.`);
