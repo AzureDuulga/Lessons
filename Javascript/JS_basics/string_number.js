@@ -103,3 +103,9 @@ let too3 = prompt("3 orontoi too oruulna uu:", 345);
 too3 = Number(too3);
 let num1 = too3 / 100;
 let num2 = too3 / 100;
+
+//random number between
+
+let too1 = prompt("Duriin too1 oruulna uu: ");
+let too2 = prompt("Duriin too2 oruulna uu: ");
+console.log("randomNum:", Math.floor(Math.random() * too1) + too2);
