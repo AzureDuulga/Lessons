@@ -126,10 +126,10 @@ let data = [
   "байна",
 ];
 let utga = "нүүрс";
-let nuurs = 0;
-for (let count = 0; count < data.length; count++) {
-  if (utga === data[count]) {
-    nuurs++;
+let count = 0;
+for (let m = 0; m < data.length; m++) {
+  if (utga === data[m]) {
+    count++;
   }
 }
-console.log("nuurs too", nuurs);
+console.log(utga, "тоо:", count);
