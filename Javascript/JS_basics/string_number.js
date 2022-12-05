@@ -94,12 +94,30 @@
 
 //<---Number daalgavar starts here--->
 //Nearest Number
-console.log("Nearest number");
-let butarhai = prompt("Butarhai too oruulna uu:", 0.234523);
-console.log(Math.round(butarhai));
+// console.log("Nearest number");
+// let butarhai = prompt("Butarhai too oruulna uu:", 0.234523);
+// console.log(Math.round(butarhai));
 
-//3 orontoi toonii niilber
-let too3 = prompt("3 orontoi too oruulna uu:", 345);
-too3 = Number(too3);
-let num1 = too3 / 100;
-let num2 = too3 / 100;
+// //3 orontoi toonii niilber
+// let too3 = prompt("3 orontoi too oruulna uu:", 345);
+// too3 = Number(too3);
+// let num1 = too3 / 100;
+// let num2 = too3 / 100;
+
+//general-triangle
+console.log("general-triangle");
+let traingleA = 3,
+  traingleB = 4;
+let triangleC = Math.sqrt(traingleA ** 2 + traingleA ** 2);
+console.log(Math.round(triangleC));
+//Simple assignment
+console.log(
+  "0-ээс 100 хүртэл санамсаргүй тоо: ",
+  Math.random() * (100 - 0) + 0
+);
+console.log(
+  "50-ээс 255 хүртэл санамсаргүй тоо: ",
+  Math.random() * (255 - 50) + 50
+);
+
+//Validate phone number
