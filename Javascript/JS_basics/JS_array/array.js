@@ -133,3 +133,50 @@ for (let m = 0; m < data.length; m++) {
   }
 }
 console.log(utga, "тоо:", count);
+
+//Duplicate counter
+let input = 87602550504;
+
+for (let j = 0; j <= 9; j++) {
+  let number = 0;
+  for (let i = 0; i < `${input}`.length; i++) {
+    if (`${input}`[i] == j) {
+      number++;
+    }
+  }
+  console.log(`${j}:${number}`);
+}
+
+// console.log(number0);
+
+//хоёр массивын үржвэр
+arr1 = [3, 45, 23, 78, 34];
+arr2 = [4, 2, 34, 4, 12, 1];
+arr3 = [];
+for (let i = 0; i < arr2.length; i++) {
+  arr3[i] = arr1[i] * arr2[i];
+}
+console.log(arr3);
+
+//Even and odd
+let evOdd = [5, 6, 4, 12, 19, 121, 1, 7, 9, 63];
+let even = 0;
+let odd = 0;
+for (let i = 0; i < evOdd.length; i++) {
+  console.log(evOdd[i]);
+  if (evOdd[i] % 2 == 0) {
+    even++;
+  } else if (evOdd[i] % 2 !== 0) {
+    odd++;
+  }
+}
+console.log("тэгш тоо: ", even);
+console.log("тэгш тоо: ", odd);
+
+//Өгөгдсөн массив дахь давхардсан утгa
+
+let array1 = [4, 2, 34, 4, 1, 12, 1, 4];
+
+for (let j = 0; j < array1.length; j++) {
+  if( array1[j] )
+}
