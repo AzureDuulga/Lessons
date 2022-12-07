@@ -58,3 +58,37 @@ function randomNumBetween(min, max) {
 }
 console.log("тоон интервал дахь санамсаргүй тоо", randomNumBetween(1, 7));
 //5. Өгөгдсөн array - ийн дундажыг олох функц бич.
+
+let arrAverage = [243, 3456, 356, 5646, 67];
+
+function dundajOloh(arrays) {
+  let sum = 0;
+  for (let i = 0; i < arrays.length; i++) {
+    sum += arrays[i];
+  }
+  let dundaj2 = sum / arrays.length;
+  return dundaj2;
+}
+let dundaj1 = dundajOloh(arrAverage);
+console.log(`${arrAverage}-н дундаж ${dundaj1}`);
+
+//6. Өгөгдсөн array - ийн нийлбэрийг олох функц бич.
+
+let sum = 0;
+function niilberOloh(arrays) {
+  for (let i = 0; i < arrays.length; i++) {
+    sum += arrays[i];
+  }
+  return sum;
+}
+let niilber = niilberOloh(arrAverage);
+console.log(`${arrAverage}-н нийлбэр ${sum}`);
+
+//7. Өгөгдсөн тоо анхны эсэхийг олох функц бич.
+
+function isPrime(n) {
+  let Prime = fasle;
+  for (let i = 2; i < n, i++; ) {
+    n % 2 === 0;
+  }
+}

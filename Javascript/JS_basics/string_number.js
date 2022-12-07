@@ -104,26 +104,26 @@
 // let num1 = too3 / 100;
 // let num2 = too3 / 100;
 
-//general-triangle
-console.log("general-triangle");
-let traingleA = 3,
-  traingleB = 4;
-let triangleC = Math.sqrt(traingleA ** 2 + traingleA ** 2);
-console.log(Math.round(triangleC));
-//Simple assignment
-console.log(
-  "0-ээс 100 хүртэл санамсаргүй тоо: ",
-  Math.random() * (100 - 0) + 0
-);
-console.log(
-  "50-ээс 255 хүртэл санамсаргүй тоо: ",
-  Math.random() * (255 - 50) + 50
-);
+// //general-triangle
+// console.log("general-triangle");
+// let traingleA = 3,
+//   traingleB = 4;
+// let triangleC = Math.sqrt(traingleA ** 2 + traingleA ** 2);
+// console.log(Math.round(triangleC));
+// //Simple assignment
+// console.log(
+//   "0-ээс 100 хүртэл санамсаргүй тоо: ",
+//   Math.random() * (100 - 0) + 0
+// );
+// console.log(
+//   "50-ээс 255 хүртэл санамсаргүй тоо: ",
+//   Math.random() * (255 - 50) + 50
+// );
 
-//Validate phone number
+// //Validate phone number
 
-//random number between
+// //random number between
 
-let too1 = prompt("Duriin too1 oruulna uu: ");
-let too2 = prompt("Duriin too2 oruulna uu: ");
-console.log("randomNum:", Math.floor(Math.random() * too1) + too2);
+// let too1 = prompt("Duriin too1 oruulna uu: ");
+// let too2 = prompt("Duriin too2 oruulna uu: ");
+// console.log("randomNum:", Math.floor(Math.random() * too1) + too2);
