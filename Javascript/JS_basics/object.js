@@ -48,11 +48,10 @@ let students = [
   { name: "Bilguun", birthOfYear: 2003, hobby: "Music", single: true },
 ];
 
-let nas20deesh = function (name) {
+let nas20deesh = function () {
   for (let i = 0; i < students.length; i++) {
-    if (name == students[i].name || 2022 - students[i].birthOfYear > 20)
-      return students[i].name, "20 nasnaas deesh";
+    if (2022 - students[i].birthOfYear > 20)
+      return console.log(students[i].name, "20 nasnaas deesh");
   }
-  return students[i].name, "20 nasnaas doosh";
 };
-console.log(nas20deesh("Bilguun");
+nas20deesh();
