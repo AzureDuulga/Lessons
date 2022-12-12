@@ -121,9 +121,51 @@
 // );
 
 // //Validate phone number
+let numberPhone = prompt("Та утасны дугаар оруулна уу?");
+let ariin12 = Number(numberPhone.slice(1, 12));
+console.log(ariin12);
+if (typeof ariin12 == "number") {
+  if (numberPhone.slice(0, 4) == "+976") {
+    if (numberPhone.length == 12) {
+      alert("Та Монгол улсын утасны дугаарыг зөв орууллаа");
+    } else {
+      alert(
+        "Та Монгол улсын утасны код буюу +976 эхэлсэн 12 тэмдэгттэй дугаар оруулна уу"
+      );
+    }
+  } else {
+    alert("Та Монгол улсын утасны код буюу +976 эхэлсэн дугаар оруулна уу");
+  }
+} else {
+  alert("Та тоо эсвэл бүхэл тоо оруулна уу");
+}
 
-// //random number between
+//<---- random number between------>
 
 // let too1 = prompt("Duriin too1 oruulna uu: ");
 // let too2 = prompt("Duriin too2 oruulna uu: ");
 // console.log("randomNum:", Math.floor(Math.random() * too1) + too2);
+
+// let numberPhone = "+97699261196";
+// let ariin12 = Number(numberPhone.slice(1, 12));
+// console.log(Number.isInteger(ariin12));
+
+// <---- Registration number starts here------>
+// let registerNumber = "MZ98102311";
+// let urd2 = registerNumber.slice(0, 2);
+// let hoid8 = registerNumber.slice(2, 10);
+// var x = Number(hoid8);
+// console.log(typeof urd2);
+// if (registerNumber.length == 10) {
+//   if (typeof urd2 == "string") {
+//     if (typeof x == "number") {
+//       alert("Та Монгол улсын утасны регистрийн дугаарыг зөв орууллаа");
+//     } else {
+//       alert("Та эхний 2 орны араа 8 тэмдэгттэй тоо оруулна уу");
+//     }
+//   } else {
+//     alert("Та эхний 2 оронд үсэг оруулна уу");
+//   }
+// } else {
+//   alert("Та 10 тэмдэгт оруулна уу");
+// }

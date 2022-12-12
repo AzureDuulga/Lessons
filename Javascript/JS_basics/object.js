@@ -54,4 +54,4 @@ let nas20deesh = function () {
       return console.log(students[i].name, "20 nasnaas deesh");
   }
 };
-nas20deesh();
+console.log(nas20deesh("Bilguun");
