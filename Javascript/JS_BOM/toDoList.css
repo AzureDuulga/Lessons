@@ -1,0 +1,25 @@
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
+input {
+  border: none;
+  background: none;
+}
+#borderbottom {
+  border: 0ch;
+  border-bottom: 2px solid orange;
+  background: rgba(233, 223, 223, 0.993);
+  padding: 10px;
+}
+#button-addon2 {
+  background: orange;
+}
+hr {
+  color: rgb(2, 2, 23);
+}
+#jagsaalt {
+  background-color: lightgray;
+  width: 85%;
+  margin: auto;
+}
