@@ -7,6 +7,7 @@
 const inputText = document.querySelector("#borderbottom");
 const addBtn = document.querySelector("#button-addon2");
 const taskList = document.getElementById("tasks");
+const remainingTasks = document.getElementById("remainingTasks");
 
 var ognoo = document.getElementById("time");
 function time() {
@@ -18,14 +19,16 @@ function time() {
 }
 setInterval(time, 1000);
 // Үлдэгдэл task counter
-const taskCounter = 0;
+function uldsenTask=()=>{
+  remainingTasks.textContent = ``;
+}
 
 //Task Нэмэх
 
 const cardItem = (text) => {
   return `<div class="row rounded border border-warning p-1 my-3" id="jagsaalt">
     <input
-      class="col-10"
+      class="col-8"
       type="text"
       placeholder="Coding"
       aria-label="Username"
@@ -37,10 +40,10 @@ const cardItem = (text) => {
       <button type="button" class="btn p-2">
         <i class="bi bi-pencil-fill"></i>
       </button>
-      <button type="button" class="btn p-2">
+      <button type="button" class="btn p-2" onclick="checkBtn(this)">
         <i class="bi bi-check2 text-success"></i>
       </button>
-      <button type="button" class="btn p-2">
+      <button type="button" class="btn p-2" onclick="deleteBtn(this)">
         <i class="bi bi-trash text-danger"></i>
       </button>
     </div>
@@ -49,10 +52,12 @@ const cardItem = (text) => {
 
 const taskAdd = () => {
   let text = inputText.value;
+  console.log(text);
   if (text === "") {
     alert("Ta utga oruulna uu");
   } else {
     taskList.innerHTML += cardItem(text);
+    console.log(taskList);
   }
 };
 
@@ -62,3 +67,17 @@ document.addEventListener("keyup", (e) => {
     taskAdd();
   }
 });
+
+//Delete hiih
+const deleteBtn = (e) => {
+  const parent = e.parentNode.parentNode.parentNode;
+  const child = e.parentNode.parentNode;
+  parent.removeChild(child);
+};
+
+//Check hiih
+const checkBtn = (e) => {
+  const parent = e.parentNode.parentNode.parentNode;
+  const child = e.parentNode.parentNode;
+  parent.removeChild(child);
+};

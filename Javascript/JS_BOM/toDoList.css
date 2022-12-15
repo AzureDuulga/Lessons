@@ -8,18 +8,26 @@ input {
 }
 #borderbottom {
   border: 0ch;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #f49d1a;
   background: rgba(233, 223, 223, 0.993);
   padding: 10px;
 }
 #button-addon2 {
-  background: orange;
+  background: #f49d1a;
+}
+#button-addon2:hover {
+  background: #1c315e;
+}
+h1 {
+  color: #1c315e;
 }
 hr {
-  color: rgb(2, 2, 23);
+  color: #1c315e;
+}
+#jagsaaltBorder {
+  border-bottom: #1c315e 3px solid;
 }
 #jagsaalt {
-  background-color: lightgray;
-  width: 85%;
+  max-width: 85%;
   margin: auto;
 }
