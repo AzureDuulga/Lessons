@@ -12,8 +12,14 @@ input {
   background: rgba(233, 223, 223, 0.993);
   padding: 10px;
 }
-#button-addon2 {
+#button-addon2,
+#priority {
   background: #f49d1a;
+}
+#priority {
+  color: white;
+  border: none;
+  font-size: small;
 }
 #button-addon2:hover {
   background: #1c315e;
@@ -30,4 +36,17 @@ hr {
 #jagsaalt {
   max-width: 85%;
   margin: auto;
+}
+.crosstext {
+  text-decoration: line-through;
+  color: grey !important;
+}
+.high {
+  border: 5px solid red !important;
+}
+.medium {
+  border: 5px solid orange !important;
+}
+.low {
+  border: 5px solid green !important;
 }
