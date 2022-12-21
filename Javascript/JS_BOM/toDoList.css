@@ -39,7 +39,6 @@ hr {
 }
 .crosstext {
   text-decoration: line-through;
-  color: grey !important;
 }
 .high {
   border: 5px solid red !important;

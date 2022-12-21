@@ -96,17 +96,6 @@ const editBtn = (i) => {
   }
 };
 
-//Check tasks start here----->
-const checkBtn = (i) => {
-  if (taskArray[i].status == "false") {
-    taskArray[i].status = "true";
-    taskList.children[i].classList.add("crosstext");
-  } else if (taskArray[i].status == "true") {
-    taskArray[i].status = "false";
-    taskList.children[i].classList.remove("crosstext");
-  }
-};
-
 function handleKey(e, idx) {
   const btnEdit = taskList.children[idx].children[1].children[0].children[0];
   taskList.children[idx].addEventListener("keyup", (e) => {
@@ -122,3 +111,15 @@ function handleKey(e, idx) {
     }
   });
 }
+
+//Check tasks start here----->
+const checkBtn = (i) => {
+  if (taskArray[i].status == "false") {
+    taskArray[i].status = "true";
+    taskList.children[i].classList.add("crosstext");
+    console.log(taskList.children[i].classList);
+  } else if (taskArray[i].status == "true") {
+    taskArray[i].status = "false";
+    taskList.children[i].classList.remove("crosstext");
+  }
+};
