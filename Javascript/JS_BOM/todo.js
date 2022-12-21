@@ -26,12 +26,14 @@ const fulljagsaalt = () => {
   for (let i = 0; i < taskArray.length; i++) {
     let text = `<div class="row rounded border ${taskArray[i].priority} p-1 my-3" id="jagsaalt">
                   <input
-                    class="col-8"
+                    class="col-10"
                     type="text"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                     readonly
                     value="${taskArray[i].name}"
+                    data-id=${i}
+                    onkeypress="handleKey(this, ${i})"
                   />
                   <div class="col p-0">
                     <button type="button" class="btn p-2" onclick="editBtn(${i})">
@@ -62,9 +64,10 @@ const taskArrayNemeh = () => {
   }
 };
 addBtn.addEventListener("click", taskArrayNemeh);
-document.addEventListener("keyup", (e) => {
+inputText.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     taskArrayNemeh();
+    inputText.value = "";
   }
 });
 
@@ -79,10 +82,18 @@ const deleteBtn = (i) => {
 //Edit tasks start here----->
 
 const editBtn = (i) => {
-  taskList.children[i].children[0].removeAttribute("readonly");
+  const btnEdit = taskList.children[i].children[1].children[0].children[0];
   let text = taskList.children[i].children[0].value;
   taskArray[i].name = text;
-  console.log(taskArray[i]);
+  if (btnEdit.classList.contains("bi-pencil-fill")) {
+    btnEdit.classList.remove("bi-pencil-fill");
+    btnEdit.classList.add("bi-check-square");
+    taskList.children[i].children[0].removeAttribute("readonly");
+  } else if (btnEdit.classList.contains("bi-check-square")) {
+    btnEdit.classList.remove("bi-check-square");
+    btnEdit.classList.add("bi-pencil-fill");
+    taskList.children[i].children[0].setAttribute("readonly", "readonly");
+  }
 };
 
 //Check tasks start here----->
@@ -95,3 +106,19 @@ const checkBtn = (i) => {
     taskList.children[i].classList.remove("crosstext");
   }
 };
+
+function handleKey(e, idx) {
+  const btnEdit = taskList.children[idx].children[1].children[0].children[0];
+  taskList.children[idx].addEventListener("keyup", (e) => {
+    if (e.key === "Enter") {
+      if (btnEdit.classList.contains("bi-check-square")) {
+        let text = taskList.children[idx].children[0].value;
+        taskArray[idx].name = text;
+        btnEdit.classList.remove("bi-check-square");
+        btnEdit.classList.add("bi-pencil-fill");
+        taskList.children[idx].children[0].setAttribute("readonly", "readonly");
+        console.log(taskArray[idx].name);
+      }
+    }
+  });
+}
