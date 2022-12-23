@@ -1,0 +1,14 @@
+main {
+  border-radius: 20px;
+  background-color: rgb(25, 118, 225);
+  width: 40%;
+  margin: auto;
+  height: 50vh;
+}
+
+p {
+  color: white;
+}
+div:last-child {
+  background-color: white;
+}
