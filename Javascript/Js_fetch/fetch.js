@@ -10,6 +10,7 @@ async function fetchUsers() {
     const res = await fetch("https://randomuser.me/api");
     // console.log(res);
     data = await res.json();
+    console.log(data);
   } catch (error) {
     console.log("ymr negen aldaa garlaa");
   }
@@ -24,8 +25,7 @@ const renderHTML = () => {
   if (data) {
     data.results.forEach((d) => {
       const item = `
-          <div style="color: red;">${d.name.first}</div>
-      `;
+          <div style="color: red;">${d.name.first} ${d.name.last}</div>`;
       cards.innerHTML += item;
     });
   }

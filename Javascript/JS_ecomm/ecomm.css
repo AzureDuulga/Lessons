@@ -1,0 +1,91 @@
+#navZurag {
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  top: 0px;
+  border-radius: 99px;
+}
+.center {
+  align-items: center;
+}
+button {
+  height: 40px;
+  width: 104px;
+  border-radius: 4px;
+}
+p {
+  text-align: center;
+}
+nav a {
+  background: linear-gradient(90deg, #2979ff 0%, #4c589e 100%);
+  border-radius: 6px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+}
+a p {
+  align-items: center;
+  text-align: center;
+}
+title {
+  font-size: 36px;
+}
+nav p {
+  margin: 0;
+}
+img {
+  height: 201px;
+  width: 100%;
+  border-radius: 0px;
+}
+h6 {
+  font-size: 26px;
+}
+#watchBtn {
+  height: 32px !important;
+  width: 88px !important;
+  border-radius: 4px !important;
+}
+.Cards {
+  width: 400px;
+}
+.descriptionHeight {
+  height: 70px;
+}
+.bi-star-fill,
+.bi-star {
+  color: #fb8200 !important;
+}
+.Cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#searchBtn {
+  background: none !important;
+  border: none !important;
+  width: 100%;
+}
+#searchBtn:focus {
+  outline: none !important;
+  border: none !important;
+}
+#searchBtn::placeholder {
+  color: black;
+}
+.quickSearch:hover {
+  background: #ebf2ff;
+  color: #2979ff;
+}
+/* Side menu starts from here------>*/
+aside {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  height: 100vh;
+  background-color: white;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#cartZurag {
+  width: 150px;
+  height: 150px;
+}
