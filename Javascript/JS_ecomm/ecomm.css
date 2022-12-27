@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 #navZurag {
   height: 40px;
   width: 40px;
@@ -43,7 +46,7 @@ h6 {
 }
 #watchBtn {
   height: 32px !important;
-  width: 88px !important;
+  width: 120px !important;
   border-radius: 4px !important;
 }
 .Cards {
@@ -78,14 +81,23 @@ h6 {
 /* Side menu starts from here------>*/
 aside {
   position: absolute;
-  right: 0;
+  right: -45%;
   width: 45%;
   height: 100vh;
   background-color: white;
   font-size: 0.9rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s all;
+}
+.showCart {
+  right: 0px;
 }
 #cartZurag {
   width: 150px;
   height: 150px;
+}
+.cartFlex {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
