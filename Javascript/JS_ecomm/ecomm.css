@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
 }
+
 #navZurag {
   height: 40px;
   width: 40px;
@@ -19,14 +20,12 @@ button {
 p {
   text-align: center;
 }
-nav a {
+.logo {
   background: linear-gradient(90deg, #2979ff 0%, #4c589e 100%);
   border-radius: 6px;
   height: 40px;
   width: 40px;
   display: flex;
-}
-a p {
   align-items: center;
   text-align: center;
 }
@@ -101,3 +100,8 @@ aside {
   justify-content: space-between;
   height: 100vh;
 }
+ul {
+  list-style-type: none;
+}
+
+/* Sin in design starts here */

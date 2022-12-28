@@ -4,8 +4,12 @@ const productList = document.getElementsByClassName("productList")[0];
 let allProducts = null;
 let cartList = document.getElementById("cartList");
 let cartProducts = [];
+const topCatg = document.getElementById("topCatg");
+const sideCatg = document.getElementById("sideCatg");
+let allCategory = null;
 let myCartDiv = document.getElementById("myCartDiv");
 let aside = document.getElementById("aside");
+const cartCount = document.querySelector(".cartCount");
 
 const displayProduct = () => {
   allProducts.forEach((product, idx) => {
@@ -43,19 +47,41 @@ const displayProduct = () => {
   });
 };
 
+const displayCategory = () => {
+  allCategory.forEach((category) => {
+    const topSingleCatg = `
+    <li class="border p-2 m-2 text-capitalize">${category}</li>
+    `;
+    topCatg.innerHTML += topSingleCatg;
+    const sideSingleCatg = `
+    <li class="nav-item">
+    <a class="nav-link active text-capitalize" aria-current="page" href="#">${category}</a>
+  </li>
+    `;
+    sideCatg.innerHTML += sideSingleCatg;
+  });
+};
+
 const getProducts = async () => {
   const response = await fetch("https://dummyjson.com/products");
   const data = await response.json();
   allProducts = data.products;
   displayProduct();
-  console.log(allProducts);
 };
-
 getProducts();
+
+const getCategories = async () => {
+  const response = await fetch("https://dummyjson.com/products/categories");
+  const data = await response.json();
+  allCategory = data;
+  displayCategory();
+};
+getCategories();
 
 const addCart = (idx) => {
   console.log("Added to cart:", idx);
   cartProducts.push(allProducts[idx]);
+  cartCount.innerText = cartProducts.length;
   addToCart();
 };
 
